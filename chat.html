@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Career Mentor Chatbot</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0" />
+  <link rel="stylesheet" href="styl.css">
+</head>
+<body>
+  <header class="header">
+    <h1 class="title">Career Guidance Mentor</h1>
+    <p class="subtitle">I can help you with education and career decisions</p>
+    <div class="education-level-selector">
+      <select id="education-level">
+        <option value="">Select your education level</option>
+        <option value="10th">10th Grade</option>
+        <option value="12th">12th Grade</option>
+        <option value="grad">Graduation</option>
+        <option value="postgrad">Post Graduation</option>
+      </select>
+      <select id="stream" disabled>
+        <option value="">Select your stream</option>
+      </select>
+    </div>
+    <ul class="suggestion-list">
+      <li class="suggestion">
+        <h4 class="text">What are the best career options after 12th Science?</h4>
+        <span class="icon material-symbols-rounded">school</span>
+      </li>
+      <li class="suggestion">
+        <h4 class="text">Which engineering specialization has the best job prospects?</h4>
+        <span class="icon material-symbols-rounded">engineering</span>
+      </li>
+      <li class="suggestion">
+        <h4 class="text">How can I prepare for IIT-JEE effectively?</h4>
+        <span class="icon material-symbols-rounded">lightbulb</span>
+      </li>
+      <li class="suggestion">
+        <h4 class="text">What are the top universities abroad for MBA?</h4>
+        <span class="icon material-symbols-rounded">travel_explore</span>
+      </li>
+    </ul>
+  </header>
+  <div class="chat-list"></div>
+  <div class="typing-area">
+    <form action="#" class="typing-form">
+      <div class="input-wrapper">
+        <input type="text" placeholder="Ask about careers, courses, or exams..." class="typing-input" required />
+        <button id="send-message-button" class="icon material-symbols-rounded">send</button>
+      </div>
+      <div class="action-buttons">
+        <span id="theme-toggle-button" class="icon material-symbols-rounded">light_mode</span>
+        <span id="delete-chat-button" class="icon material-symbols-rounded">delete</span>
+      </div>
+    </form>
+    <p class="disclaimer-text">
+      Career recommendations are based on current market trends. Always verify with official sources.
+    </p>
+  </div>
+  <script src="script1.js"></script>
+</body>
+</html>
